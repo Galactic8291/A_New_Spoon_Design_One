@@ -6,7 +6,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #ecf0f1;
+  background-color: #fdfcfc;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -112,5 +112,19 @@
   -ms-transform: translateX(4px) translateY(2px) rotate(-45deg);
   -o-transform: translateX(4px) translateY(2px) rotate(-45deg);
   transform: translateX(4px) translateY(2px) rotate(-45deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .top-bar {
+    height: 55px;
+  }
+
+  .logo {
+    margin: 12px 0 0 20px;
+  }
+
+  .trigger {
+    display: none;
+  }
 }
 
