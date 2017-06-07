@@ -1,11 +1,7 @@
 /* Responsive Navigation */
 @media only screen and (max-width: 700px) and (orientation: landscape) {
-  .navigation, .top-bar {
-    position: absolute;
-  }
-
-  .navigation {
-    height: 150%;
+  .navigation .action-btn {
+    padding-bottom: 15px;
   }
 }
 
