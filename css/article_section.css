@@ -25,3 +25,18 @@
   color: #95a5a6;
 }
 
+@media only screen and (min-width: 768px) {
+  .article-section {
+    margin-left: 10px;
+  }
+
+  .title-card .title {
+    font-size: 2rem;
+  }
+
+  .title-card .more {
+    padding-right: 0;
+    font-size: 1.8rem;
+  }
+}
+
