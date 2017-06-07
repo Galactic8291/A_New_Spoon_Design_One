@@ -64,6 +64,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .main-content .content-wrapper {
     margin-left: 200px;
+    padding: 55px 2% 3em;
   }
 }
 
