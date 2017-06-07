@@ -1,6 +1,7 @@
 /* Navigation */
 .navigation {
   position: fixed;
+  font-family: 'Varela Round';
   z-index: 2;
   left: 0;
   top: 0;

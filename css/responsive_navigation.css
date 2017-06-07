@@ -34,7 +34,7 @@
   }
 
   .navigation a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
@@ -80,7 +80,7 @@
   }
 
   .navigation > ul > li > a {
-    padding: 1em 1em 1em 42px;
+    padding: 1em 1em 1em 30px;
     text-align: left;
     border-bottom: none;
   }
@@ -104,7 +104,7 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 18px;
+    right: 20px;
     left: auto;
     box-shadow: none;
   }
