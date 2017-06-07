@@ -121,17 +121,28 @@
 
   .logo {
     height: 100%;
+    margin: 0 0 0 10px;
+    width: 145px;
+  }
+
+  .logo img {
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  .trigger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .logo {
     margin: 0 0 0 20px;
     width: 180px;
   }
 
   .logo img {
     width: 75%;
-    margin: 5px auto;
-  }
-
-  .trigger {
-    display: none;
   }
 }
 
