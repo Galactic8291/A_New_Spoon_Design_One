@@ -120,7 +120,14 @@
   }
 
   .logo {
-    margin: 12px 0 0 20px;
+    height: 100%;
+    margin: 0 0 0 20px;
+    width: 180px;
+  }
+
+  .logo img {
+    width: 75%;
+    margin: 5px auto;
   }
 
   .trigger {
