@@ -1,0 +1,27 @@
+/* Article Section Styling */
+.article-section {
+  margin: 10px 0 10px 0;
+}
+
+.title-card {
+  line-height: 2.1;
+  border-bottom: 1px solid #ecf0f1;
+  font-family: 'Varela Round';
+  margin-bottom: 12px;
+}
+
+.title-card .title {
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  font-weight: 600;
+  padding-right: 50px;
+  font-size: 1.8rem;
+}
+
+.title-card .more {
+  float: right;
+  font-size: 1.5rem;
+  padding-right: 10px;
+  color: #95a5a6;
+}
+
