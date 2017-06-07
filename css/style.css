@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   height: 100%;
   width: 100%;
 }
@@ -35,5 +35,22 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+.main-content::before {
+  display: none;
+  content: 'mobile';
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content::before {
+    content: 'tablet';
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .main-content::before {
+    content: 'desktop';
+  }
 }
 

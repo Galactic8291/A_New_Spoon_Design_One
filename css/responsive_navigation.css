@@ -1,0 +1,131 @@
+/* Responsive Navigation */
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+  .navigation .action-btn {
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    position: fixed;
+    float: left;
+    top: auto;
+    width: 110px;
+    padding-top: 55px;
+    left: 0;
+    overflow: visible;
+    max-height: none;
+  }
+
+  .navigation.nav-is-visible {
+    box-shadow: none;
+  }
+
+  .navigation > ul {
+    padding: 0;
+  }
+
+  .navigation > ul > li > a {
+    padding: 2.2em 15px 2.4em;
+  }
+
+  .navigation .navigation-label {
+    display: none;
+  }
+
+  .navigation a {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .navigation .active > a {
+    /* current page */
+    box-shadow: inset 3px 0 0 #34c149;
+    background-color: #33383e;
+  }
+
+  .navigation .count {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    top: 24px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: calc(50% + 26px);
+    right: auto;
+    color: transparent;
+  }
+
+  .navigation .action-btn a {
+    margin: 1em 10% 0;
+  }
+
+  .excersise .count {
+    left: calc(50% + 34px);
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navigation {
+    width: 200px;
+  }
+
+  .navigation > ul {
+    padding: 0.6em 0;
+  }
+
+  .navigation > ul > li > a {
+    padding: 1em 1em 1em 42px;
+    text-align: left;
+    border-bottom: none;
+  }
+
+  .navigation .navigation-label {
+    display: block;
+    padding: 1em 18px;
+  }
+
+  .navigation .count {
+    /* reset style */
+    color: #ffffff;
+    height: auto;
+    width: auto;
+    border-radius: .25em;
+    padding: .2em .4em;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 18px;
+    left: auto;
+    box-shadow: none;
+  }
+
+  .navigation .action-btn a {
+    margin: 0 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,9 +1,10 @@
 (function($) {
   const menuButton = $('.menu-button'),
-        trigger = $('.trigger')
+    trigger = $('.trigger'),
+    navigation = $('.navigation')
 
   trigger.click(event => {
     event.preventDefault()
-    $(menuButton).toggleClass('nav-is-visible')
+    $([menuButton, navigation]).toggleClass('nav-is-visible')
   })
 })(jQuery)
