@@ -36,16 +36,6 @@
   background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 
-/* .card:hover .card-info {
-  opacity: 1;
-  bottom: 120px;
-}
-
-.card:hover .color-overlay {
-  background: rgba(84, 104, 110, 0.8);
-}
-*/
-
 .card .category {
   z-index: 5;
   color: #ffffff;
@@ -116,15 +106,15 @@
 .card .card-info {
   width: 100%;
   position: absolute;
-  bottom: 100px;
+  bottom: 110px;
   left: 0;
   margin: 0 auto;
-  padding: 0 50px;
-  color: #DCE3E7;
-  font-family: 'Droid Serif', serif;
-  line-height: 24px;
+  padding: 0 40px;
+  color: #dce3e7;
+  font-family: 'Varela Round', serif;
+  line-height: 20px;
+  font-size: 1.4rem;
   z-index: 5;
-  display: none;
   opacity: 0;
   transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
 }

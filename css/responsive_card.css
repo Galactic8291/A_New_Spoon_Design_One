@@ -20,3 +20,22 @@
   }
 }
 
+@media only screen and (min-width: 1170px) {
+  .card {
+    height: 350px;
+  }
+
+  .card .category {
+    font-size: 1.5rem;
+  }
+
+  .card:hover .card-info {
+    opacity: 1;
+    bottom: 75px;
+  }
+
+  .card:hover .color-overlay {
+    background: rgba(84, 104, 110, 0.8);
+  }
+}
+
