@@ -95,6 +95,22 @@
   line-height: 15px;
 }
 
+.card .title-content .author-info {
+  margin: 8px auto;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.card .title-content .author-info i {
+  color: #34c149;
+}
+
+.card .title-content .author-info a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
 .card .card-info {
   width: 100%;
   position: absolute;
@@ -120,14 +136,14 @@
 
 .card .utility-list {
   list-style-type: none;
-  margin: 0 0 20px 20px;
+  margin: 0 0 8px 8px;
   padding: 0;
   width: 100%;
 }
 
 .card .utility-list li {
   margin: 0 5px 0 0;
-  padding: 0 0 10px 10px;
+  padding: 0 0 5px 5px;
   display: inline-block;
   color: #dce3e7;
   font-family: 'Roboto', sans-serif;
