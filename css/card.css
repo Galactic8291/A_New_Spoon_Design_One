@@ -1,0 +1,142 @@
+/* Card Styling */
+.card {
+  width: 90%;
+  height: 250px;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/159/682/medium/DSC_9948_edit.jpg?1492997475) no-repeat;
+  background-position: 0;
+  background-size: 100% 100%;
+}
+
+.card .color-overlay, .card .gradient-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.card .color-overlay {
+  /* Rectangle 11: */
+  background: rgba(84, 104, 110, 0.4);
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.card .gradient-overlay {
+  /* bg-gradient: */
+  background-image: -webkit-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-image: -moz-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-image: -o-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+/* .card:hover .card-info {
+  opacity: 1;
+  bottom: 120px;
+}
+
+.card:hover .color-overlay {
+  background: rgba(84, 104, 110, 0.8);
+}
+*/
+
+.card .category {
+  z-index: 5;
+  color: #ffffff;
+  padding: 8px 10px;
+  background-color: #34c149;
+  position: absolute;
+  left: 0;
+  top: 0;
+  position: absolute;
+  font-size: 1.3rem;
+  font-family: 'Varela Round';
+  font-weight: 700;
+}
+
+.card .title-content {
+  text-align: center;
+  margin: 20% 0 0 0;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.card .title-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-family: 'Varela Round';
+  margin-bottom: 0;
+}
+
+.card .title-content hr {
+  width: 50px;
+  height: 3px;
+  margin: 10px auto;
+  border: 0;
+  background-color: #34c149;
+}
+
+.card .title-content .intro {
+  width: 200px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'Varela Round';
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 15px;
+}
+
+.card .card-info {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 50px;
+  color: #DCE3E7;
+  font-family: 'Droid Serif', serif;
+  line-height: 24px;
+  z-index: 5;
+  display: none;
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.card .utility-info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 5;
+}
+
+.card .utility-list {
+  list-style-type: none;
+  margin: 0 0 20px 20px;
+  padding: 0;
+  width: 100%;
+}
+
+.card .utility-list li {
+  margin: 0 5px 0 0;
+  padding: 0 0 10px 10px;
+  display: inline-block;
+  color: #dce3e7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.card .utility-list i {
+  font-size: 18px;
+  margin-right: 2px;
+  color: #34c149;
+}
+

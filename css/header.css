@@ -1,7 +1,7 @@
 /* Header Styling */
 .top-bar {
   position: fixed;
-  z-index: 3;
+  z-index: 10;
   height: 45px;
   width: 100%;
   top: 0;
