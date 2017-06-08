@@ -52,7 +52,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .main-content .content-wrapper {
     margin-left: 100px;
-    padding-top: 55px;
+    padding: 55px 4% 3em;
   }
 }
 

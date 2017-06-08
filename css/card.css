@@ -1,14 +1,16 @@
 /* Card Styling */
 .card {
-  width: 90%;
+  width: 100%;
   height: 250px;
-  position: absolute;
+  margin: 10px auto;
+  position: relative;
   overflow: hidden;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
   background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/159/682/medium/DSC_9948_edit.jpg?1492997475) no-repeat;
   background-position: 0;
   background-size: 100% 100%;
+  transition: display 1s ease;
 }
 
 .card .color-overlay, .card .gradient-overlay {
