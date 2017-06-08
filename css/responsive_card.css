@@ -29,9 +29,13 @@
     font-size: 1.5rem;
   }
 
+  .card .title-content h3 {
+    letter-spacing: 1px;
+  }
+
   .card:hover .card-info {
     opacity: 1;
-    bottom: 75px;
+    bottom: 60px;
   }
 
   .card:hover .color-overlay {
