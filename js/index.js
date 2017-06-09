@@ -4,7 +4,10 @@
     header = $('.top-bar'),
     trigger = $('.trigger'),
     navigation = $('.navigation'),
-    search = $('.search-bar')
+    search = $('.search-bar'),
+    recipeCard = $('.recipe-card'),
+    arrowBackground = $('.arrow-background'),
+    arrow = $('.arrow')
 
   const checkViewport = () => {
     return window.getComputedStyle(document.querySelector('.main-content'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "")
@@ -30,6 +33,16 @@
     event.preventDefault()
     $([menuButton, navigation]).toggleClass('nav-is-visible')
   })
+
+  arrowBackground.click(event => {
+    recipeCard.toggleClass('flipped')
+    arrowBackground.addClass('arrow-click')
+    arrow.toggleClass('arrow-rotate')
+  });
+
+  arrowBackground.on('transitionend', () => {
+    arrowBackground.removeClass('arrow-click');
+  });
 
   moveSearch()
 })(jQuery)

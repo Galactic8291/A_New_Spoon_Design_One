@@ -7,9 +7,6 @@
   overflow: hidden;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
-  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/159/682/medium/DSC_9948_edit.jpg?1492997475) no-repeat;
-  background-position: 0;
-  background-size: 100% 100%;
   transition: display 1s ease;
 }
 
@@ -40,7 +37,6 @@
   z-index: 5;
   color: #ffffff;
   padding: 8px 10px;
-  background-color: #34c149;
   position: absolute;
   left: 0;
   top: 0;
@@ -74,11 +70,10 @@
   height: 3px;
   margin: 10px auto;
   border: 0;
-  background-color: #34c149;
 }
 
 .card .title-content .intro {
-  width: 200px;
+  width: 80%;
   margin: 0 auto;
   color: #ffffff;
   font-family: 'Varela Round';
@@ -91,10 +86,6 @@
   margin: 8px auto;
   font-size: 12px;
   color: #ffffff;
-}
-
-.card .title-content .author-info i {
-  color: #34c149;
 }
 
 .card .title-content .author-info a {
