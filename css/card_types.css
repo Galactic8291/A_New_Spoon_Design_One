@@ -1,0 +1,66 @@
+/* Card Types */
+
+.spoon-university .category, .spoon-university .title-content hr {
+  background-color: #34c149;
+}
+
+.spoon-university .author-info i, .spoon-university .utility-list i {
+  color: #34c149;
+}
+
+.healthier .category, .healthier .title-content hr {
+  background-color: #ff6c00;
+}
+
+.healthier .author-info i, .healthier .utility-list i {
+  color: #ff6c00;
+}
+
+.quit-caffeine {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/147/360/large/hot_lipton_tea_%28in_a_mug%29.jpg?1489079206) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.self-care-students {
+  background: url(http://instagram.com/p/BPojBsWlDUb/media/?size=l) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.food-holidays {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/106/102/large/Screen-Shot-2015-09-20-at-5.22.43-PM.png?1485363407) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.wisdom-teeth {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/114/363/large/Screen-Shot-2016-04-24-at-2.26.21-PM.png?1485393933) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.never-stop-running {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/164/716/large/IMG_2942.jpg?1496340215) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.starbucks {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/098/322/large/starbucksspoon.jpg?1485287193) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.dunkin-donuts-healthy {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/116/268/large/Photo-by-Elena-Bailoni.jpg?1485404542) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.watermelon-dessert-pizza {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/164/914/large/DSC_0373.JPG?1496422413) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+

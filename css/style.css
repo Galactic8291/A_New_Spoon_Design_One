@@ -21,7 +21,6 @@ body::after {
 }
 
 a {
-  color: #1784c7;
   text-decoration: none;
 }
 
@@ -53,7 +52,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .main-content .content-wrapper {
     margin-left: 100px;
-    padding-top: 55px;
+    padding: 55px 4% 3em;
   }
 }
 
@@ -64,6 +63,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .main-content .content-wrapper {
     margin-left: 200px;
+    padding: 55px 2% 3em;
   }
 }
 

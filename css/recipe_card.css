@@ -1,0 +1,257 @@
+/* Recipe Card */
+.recipe {
+  width: 330px;
+  height: 450px;
+  position: relative;
+  -webkit-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+  border-radius: 4px;
+  margin: 5px auto;
+}
+
+.recipe-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+   transition: all 0.5s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.recipe-card .front, .recipe-card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+}
+
+.recipe-card .front {
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/165/309/large/IMG_7183.JPG?1496603384) no-repeat;
+  background-size: 100% 100%;
+}
+
+.recipe-card .back {
+  background: #ffffff;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  overflow: auto;
+}
+
+.back::-webkit-scrollbar {
+  display: none;
+}
+
+.recipe-card.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.recipe-card .front .gradient-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.front .details {
+  z-index: 1;
+  position: absolute;
+  margin: 20% 0 0 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Varela Round';
+}
+
+.front .details h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.front .details hr {
+  width: 150px;
+  height: 3px;
+  background-color: #ff6c00;
+  border: 0;
+}
+
+.front .details .intro {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Varela Round';
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.front .details .author-info {
+  margin: 8px auto;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.front .details .author-info i {
+  color: #ff6c00;
+}
+
+.front .details .author-info  a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+.front .utility-info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 5;
+}
+
+.front .utility-list {
+  list-style-type: none;
+  margin: 0 0 8px 8px;
+  padding: 0;
+  width: 100%;
+}
+
+.front .utility-list li {
+  margin: 0 5px 0 0;
+  padding: 0 0 5px 5px;
+  display: inline-block;
+  color: #dce3e7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.front .utility-list i {
+  font-size: 18px;
+  margin-right: 2px;
+  color: #ff6c00;
+}
+
+.back .tabs {
+  height: 55px;
+  border-bottom: 3px solid #ededec;
+}
+
+.back .tabs ul {
+  width: 290px;
+  margin: -5px auto;
+}
+
+.back .tabs ul li {
+  display: inline;
+  float: left;
+  width: 45%;
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.back .tabs ul li:first-child {
+  color: #9a96a4;
+  border-top: 5px solid transparent;
+}
+
+.back .tabs ul li:last-child {
+  border-top: 5px solid #ff6c00;
+}
+
+.back .preparations {
+  width: 100%;
+  position: relative;
+}
+
+.back .preparations .title {
+  position: relative;
+  float: left;
+  margin: 5px 0 5px 0;
+  padding-left: 15px;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  color: #36354e;
+}
+
+.back .preparations .info {
+  position: relative;
+  float: left;
+  padding-left: 30px;
+}
+
+.back .preparations .info p {
+  border-left: 2px solid #e3e3e3;
+  font-size: 1.3rem;
+  padding: 20px;
+  text-align: left;
+  color: #565656;
+}
+
+.arrow-wrap {
+  position: absolute;
+  right: -15px;
+  top: 265px;
+}
+
+.arrow-wrap .background,
+.arrow-wrap .arrow-background {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ff6c00;
+  transition: all 0.2s linear;
+}
+
+.background {
+  opacity: 0;
+  background-color: #ff6c00;
+}
+
+.arrow-wrap .arrow-background .arrow {
+  width: 35px;
+  height: 35px;
+  background: url(../img/arrow_white.svg) no-repeat;
+  background-size: 30px 30px;
+  background-position: 50% 50%;
+  background-color: transparent;
+  transition: all 0.35s linear;
+}
+
+.arrow-rotate {
+  transform: rotate(-180deg);
+}
+
+.arrow-click {
+  transform: scale(1.7);
+}
+
+
+@media only screen and (min-width: 768px) {
+  .recipe {
+    width: 305px;
+    margin: 0;
+  }
+
+  .arrow-wrap:hover .background {
+    transform: scale(1.37);
+    opacity: 0.4;
+  }
+}
+
