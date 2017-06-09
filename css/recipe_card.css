@@ -1,1 +1,95 @@
 /* Recipe Card */
+.recipe {
+  width: 300px;
+  height: 450px;
+  position: relative;
+  -webkit-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+  border-radius: 4px;
+}
+
+.recipe-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+   transition: all 0.5s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.recipe-card .front, .recipe-card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.recipe-card .front {
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.recipe-card .back {
+  background: #ffffff;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.recipe-card.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.arrow-wrap {
+  position: absolute;
+  right: 40px;
+  bottom: 38px;
+}
+
+.arrow-wrap .background,
+.arrow-wrap .arrow-background {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #D21849;
+  transition: all 0.2s linear;
+}
+
+.background {
+  opacity: 0;
+  background-color: #D21849;
+}
+
+.arrow-wrap:hover .background {
+  transform: scale(1.37);
+  opacity: 0.4;
+}
+
+.arrow-wrap .arrow-background .arrow {
+  width: 52px;
+  height: 52px;
+  background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+  background-color: transparent;
+  transition: all 0.35s linear;
+}
+
+.arrow-rotate {
+  transform: rotate(-180deg);
+}
+
+.arrow-click {
+  transform: scale(1.7);
+}
+
