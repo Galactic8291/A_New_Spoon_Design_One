@@ -76,7 +76,9 @@
 .arrow-wrap .arrow-background .arrow {
   width: 52px;
   height: 52px;
-  background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+  background: url(../img/arrow_white.svg) no-repeat;
+  background-size: 30px 30px;
+  background-position: 50% 50%;
   background-color: transparent;
   transition: all 0.35s linear;
 }
