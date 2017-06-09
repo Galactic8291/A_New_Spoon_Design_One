@@ -34,13 +34,13 @@
     $([menuButton, navigation]).toggleClass('nav-is-visible')
   })
 
-  arrowBackground.click(function() {
+  arrowBackground.click(event => {
     recipeCard.toggleClass('flipped')
     arrowBackground.addClass('arrow-click')
     arrow.toggleClass('arrow-rotate')
   });
 
-  arrowBackground.on('transitionend', function() {
+  arrowBackground.on('transitionend', () => {
     arrowBackground.removeClass('arrow-click');
   });
 
