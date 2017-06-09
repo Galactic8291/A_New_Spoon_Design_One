@@ -1,6 +1,6 @@
 /* Recipe Card */
 .recipe {
-  width: 320px;
+  width: 330px;
   height: 450px;
   position: relative;
   -webkit-perspective: 1200px;
@@ -36,7 +36,7 @@
 }
 
 .recipe-card .front {
-  background: url(https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg) no-repeat;
+  background: url(https://s3.amazonaws.com/secretsaucefiles/photos/images/000/165/309/large/IMG_7183.JPG?1496603384) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -59,35 +59,81 @@
   border-radius: 5px;
 }
 
-.recipe-card .front .details {
+.front .details {
   z-index: 1;
   position: absolute;
   margin: 20% 0 0 0;
   width: 100%;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-family: 'Varela Round';
 }
 
-.recipe-card .front .details h3 {
+.front .details h3 {
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-.recipe-card .front .details hr {
+.front .details hr {
   width: 150px;
   height: 3px;
   background-color: #ff6c00;
   border: 0;
 }
 
-.recipe-card .front .details .intro {
+.front .details .intro {
   width: 80%;
   margin: 0 auto;
   font-family: 'Varela Round';
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: italic;
   line-height: 15px;
+  font-weight: 600;
+}
+
+.front .details .author-info {
+  margin: 8px auto;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.front .details .author-info i {
+  color: #ff6c00;
+}
+
+.front .details .author-info  a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+.front .utility-info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 5;
+}
+
+.front .utility-list {
+  list-style-type: none;
+  margin: 0 0 8px 8px;
+  padding: 0;
+  width: 100%;
+}
+
+.front .utility-list li {
+  margin: 0 5px 0 0;
+  padding: 0 0 5px 5px;
+  display: inline-block;
+  color: #dce3e7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.front .utility-list i {
+  font-size: 18px;
+  margin-right: 2px;
+  color: #ff6c00;
 }
 
 .arrow-wrap {
@@ -104,13 +150,13 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #D21849;
+  background-color: #ff6c00;
   transition: all 0.2s linear;
 }
 
 .background {
   opacity: 0;
-  background-color: #D21849;
+  background-color: #ff6c00;
 }
 
 .arrow-wrap .arrow-background .arrow {
