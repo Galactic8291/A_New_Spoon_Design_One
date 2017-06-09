@@ -1,12 +1,13 @@
 /* Recipe Card */
 .recipe {
-  width: 300px;
+  width: 320px;
   height: 450px;
   position: relative;
   -webkit-perspective: 1200px;
   -ms-perspective: 1200px;
   perspective: 1200px;
   border-radius: 4px;
+  margin: 5px auto;
 }
 
 .recipe-card {
@@ -72,11 +73,6 @@
   background-color: #D21849;
 }
 
-.arrow-wrap:hover .background {
-  transform: scale(1.37);
-  opacity: 0.4;
-}
-
 .arrow-wrap .arrow-background .arrow {
   width: 52px;
   height: 52px;
@@ -91,5 +87,18 @@
 
 .arrow-click {
   transform: scale(1.7);
+}
+
+
+@media only screen and (min-width: 768px) {
+  .recipe {
+    width: 300px;
+    margin: 0;
+  }
+
+  .arrow-wrap:hover .background {
+    transform: scale(1.37);
+    opacity: 0.4;
+  }
 }
 
