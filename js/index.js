@@ -1,6 +1,7 @@
 (function($) {
   const htmlWindow = $(window),
     menuButton = $('.menu-button'),
+    body = $('.body'),
     header = $('.top-bar'),
     trigger = $('.trigger'),
     navigation = $('.navigation'),
@@ -31,7 +32,7 @@
 
   trigger.click(event => {
     event.preventDefault()
-    $([menuButton, navigation]).toggleClass('nav-is-visible')
+    $([menuButton, navigation, body]).toggleClass('nav-is-visible')
   })
 
   arrowBackground.click(event => {
