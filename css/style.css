@@ -14,6 +14,10 @@ body {
   background-color: #ffffff;
 }
 
+.body.nav-is-visible {
+  overflow: hidden;
+}
+
 body::after {
   clear: both;
   content: '';
