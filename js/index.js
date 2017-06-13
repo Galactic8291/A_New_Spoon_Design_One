@@ -23,7 +23,7 @@
     } else {
       search.detach()
       search.insertAfter(header.find('.logo'))
-      $(body).removeClass('nav-is-visible')
+      $([navigation, menuButton, body]).removeClass('nav-is-visible')
     }
   }
 
