@@ -1,7 +1,7 @@
 /* Responsive Card */
 @media only screen and (max-width: 700px) and (orientation: landscape) {
   .card {
-    width: 600px;
+    width: 400px;
     height: 300px;
   }
 }
@@ -39,7 +39,7 @@
   }
 
   .card:hover .color-overlay {
-    background: rgba(84, 104, 110, 0.8);
+    background: rgba(44, 62, 80, 0.6);
   }
 }
 

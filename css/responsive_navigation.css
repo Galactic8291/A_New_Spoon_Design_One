@@ -41,7 +41,7 @@
   .navigation .active > a {
     /* current page */
     box-shadow: inset 3px 0 0 #34c149;
-    background-color: #33383e;
+    background-color: #333333;
   }
 
   .navigation .count {

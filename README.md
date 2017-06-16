@@ -6,4 +6,6 @@ So for new people and people that know of the old repo. Here's the spiel this pr
   Till Next Time  
   Your Favorite GalacticNinja :D
   
+  UPDATE :D - There is is a working site. That is meant to display what is working at the moment feel free to use that as a progress tracker or whatever you like. But do visit and tell me what is wrong. It is responsive so do use a variety of devices when testing this. https://thegalacticninja.github.io/A_New_Spoon/
+  
   ![alt-text](https://lolzombie.com/wp-content/uploads/2013/06/solo-chewie.jpg)

@@ -1,6 +1,7 @@
 (function($) {
   const htmlWindow = $(window),
     menuButton = $('.menu-button'),
+    body = $('.body'),
     header = $('.top-bar'),
     trigger = $('.trigger'),
     navigation = $('.navigation'),
@@ -13,7 +14,7 @@
     return window.getComputedStyle(document.querySelector('.main-content'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "")
   }
 
-  const moveSearch = () => {
+  const moveItems = () => {
     const view = checkViewport()
 
     if(view === 'mobile') {
@@ -22,16 +23,17 @@
     } else {
       search.detach()
       search.insertAfter(header.find('.logo'))
+      $(body).removeClass('nav-is-visible')
     }
   }
 
   htmlWindow.on('resize', () => {
-    (!window.requestAnimationFrame) ? setTimeout(moveSearch, 300) : window.requestAnimationFrame(moveSearch);
+    (!window.requestAnimationFrame) ? setTimeout(moveItems, 300) : window.requestAnimationFrame(moveItems);
   })
 
   trigger.click(event => {
     event.preventDefault()
-    $([menuButton, navigation]).toggleClass('nav-is-visible')
+    $([menuButton, navigation, body]).toggleClass('nav-is-visible')
   })
 
   arrowBackground.click(event => {
@@ -44,5 +46,5 @@
     arrowBackground.removeClass('arrow-click');
   });
 
-  moveSearch()
+  moveItems()
 })(jQuery)
