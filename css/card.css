@@ -1,147 +1,122 @@
 /* Card Styling */
 .card {
+  height: 260px;
   width: 100%;
-  height: 250px;
-  margin: 10px auto;
+  margin: 5px auto;
   position: relative;
-  overflow: hidden;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  transition: display 1s ease;
+  display: block;
+  font-family: 'Varela Round';
 }
 
-.card .color-overlay, .card .gradient-overlay {
+.card img {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
-}
-
-.card .color-overlay {
-  /* Rectangle 11: */
-  background: rgba(56, 44, 50, 0.1);
-  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
 .card .gradient-overlay {
-  /* bg-gradient: */
-  background-image: -webkit-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-  background-image: -moz-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-  background-image: -o-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 2%, rgba(0, 0, 0, 0.6) 100%);
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .card .category {
-  z-index: 5;
+  position: absolute;
+  display: block;
+  z-index: 2;
   color: #ffffff;
+  font-size: 1.5rem;
   padding: 8px 10px;
-  position: absolute;
-  left: 0;
+  background-color: #ff6c00;
   top: 0;
+  left: 0;
+  font-weight: 600;
+}
+
+.card .bookmark {
   position: absolute;
-  font-size: 1.3rem;
-  font-family: 'Varela Round';
-  font-weight: 700;
+  color: #ff6c00;
+  z-index: 2;
+  top: 3px;
+  right: 8px;
+}
+
+.card .bookmark i {
+  font-size: 28px;
 }
 
 .card .title-content {
-  text-align: center;
-  margin: 20% 0 0 0;
   position: absolute;
-  z-index: 5;
-  width: 100%;
+  z-index: 2;
+  margin: 18% 0;
+  text-align: center;
+  color: #ffffff;
   top: 0;
   left: 0;
 }
 
-.card .title-content h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  font-family: 'Varela Round';
-  margin-bottom: 0;
-}
-
-.card .title-content h3 a {
-  color: #ffffff;
-}
-
-.card .title-content h3 a:hover {
-  text-decoration: underline;
-}
-
 .card .title-content hr {
-  width: 50px;
-  height: 3px;
-  margin: 10px auto;
+  width: 25%;
+  height: 4px;
+  background-color: #ff6c00;
   border: 0;
+}
+
+.card .title-content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .card .title-content .intro {
   width: 80%;
+  display: block;
   margin: 0 auto;
+  font-size: 1.4rem;
   color: #ffffff;
-  font-family: 'Varela Round';
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 15px;
 }
 
-.card .title-content .author-info {
+.card .author-info {
   margin: 8px auto;
-  font-size: 12px;
-  color: #ffffff;
+  font-size: 1.5rem;
 }
 
-.card .title-content .author-info a {
+.card .author-info a {
   color: #ffffff;
   text-decoration: underline;
-  font-size: 14px;
 }
 
-.card .card-info {
-  width: 100%;
-  position: absolute;
-  bottom: 110px;
-  left: 0;
-  margin: 0 auto;
-  padding: 0 40px;
-  color: #dce3e7;
-  font-family: 'Varela Round', serif;
-  line-height: 20px;
-  font-size: 1.4rem;
-  z-index: 5;
-  opacity: 0;
-  transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+.card .author-info i {
+  color: #ff6c00;
 }
 
 .card .utility-info {
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  z-index: 5;
+  z-index: 2;
+  font-size: 1.6rem;
+  font-weight: 600;
+  bottom: 28px;
+  left: 20%;
 }
 
-.card .utility-list {
-  list-style-type: none;
-  margin: 0 0 8px 8px;
-  padding: 0;
-  width: 100%;
+.card .utility-info a {
+  color: #ffffff;
 }
 
-.card .utility-list li {
-  margin: 0 5px 0 0;
-  padding: 0 0 5px 5px;
+.card .utility-info li {
   display: inline-block;
-  color: #dce3e7;
+  margin-right: 10px;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  color: #dce3e7;
 }
 
-.card .utility-list i {
-  font-size: 18px;
-  margin-right: 2px;
+.card .utility-info li i {
+  color: #ff6c00;
 }
 
