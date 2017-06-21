@@ -33,7 +33,6 @@
   color: #ffffff;
   font-size: 1.5rem;
   padding: 8px 10px;
-  background-color: #ff6c00;
   top: 0;
   left: 0;
   font-weight: 600;
@@ -41,7 +40,6 @@
 
 .card .bookmark {
   position: absolute;
-  color: #ff6c00;
   z-index: 2;
   top: 3px;
   right: 8px;
@@ -64,7 +62,6 @@
 .card .title-content hr {
   width: 25%;
   height: 4px;
-  background-color: #ff6c00;
   border: 0;
 }
 
@@ -92,10 +89,6 @@
   text-decoration: underline;
 }
 
-.card .author-info i {
-  color: #ff6c00;
-}
-
 .card .utility-info {
   position: absolute;
   z-index: 2;
@@ -114,9 +107,5 @@
   margin-right: 10px;
   font-family: 'Roboto', sans-serif;
   color: #dce3e7;
-}
-
-.card .utility-info li i {
-  color: #ff6c00;
 }
 
