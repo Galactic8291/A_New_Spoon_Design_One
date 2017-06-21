@@ -66,6 +66,12 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .main-content .content-wrapper {
+    padding: 55px 7% 3em;
+  }
+}
+
 @media only screen and (min-width: 1170px) {
   .main-content::before {
     content: 'desktop';
@@ -73,7 +79,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .main-content .content-wrapper {
     margin-left: 200px;
-    padding: 55px 2% 3em;
+    padding: 55px 3% 3em;
   }
 }
 
